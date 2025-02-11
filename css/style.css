@@ -1,0 +1,85 @@
+/* css/style.css */
+.hero {
+    height: 80vh;
+    background-color: #ffffff;
+    margin-top: 56px; /* Height of the fixed navbar */
+}
+
+.logo {
+    max-width: 300px;
+}
+
+.project-image {
+    transition: transform 0.5s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+.text-primary {
+    color: #0ea5e9 !important; /* Sky blue color */
+}
+
+.bi {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-section {
+    padding: 120px 0;
+    min-height: calc(100vh - 200px);
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+}
+
+.form-control:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 0.2rem rgba(14, 165, 233, 0.25);
+}
+
+.btn-primary {
+    background-color: #0ea5e9;
+    border-color: #0ea5e9;
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0284c7;
+    border-color: #0284c7;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+    
+    .logo {
+        max-width: 200px;
+    }
+    
+    .contact-section {
+        padding: 80px 0;
+    }
+    
+    .card-body {
+        padding: 2rem !important;
+    }
+}
