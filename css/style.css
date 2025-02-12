@@ -29,10 +29,14 @@ img {
 /* Logo Settings */
 .logo {
     position: relative;
-    width: 30%; /* Start with 30% width */
-    transition: all 0.3s ease; /* Transition for logo scaling */
+    width: 30vw; /* Set the initial size relative to viewport width */
+    transition: all 0.3s ease; /* Smooth transition for the resizing */
 }
 
+/* The logo grows relative to the text size and screen size */
+.hero h2 {
+    font-size: 3rem; /* Default font size */
+}
 /* Section animations for when they come into view */
 .project-section {
     opacity: 0;
@@ -114,14 +118,68 @@ img {
     transform: translateY(-2px);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .hero {
-        height: 60vh;
-    }
+/* Ensure the logo image maintains its aspect ratio */
+.navbar-brand img {
+    transition: transform 0.3s ease, max-width 0.3s ease;
+    max-height: 40px; /* Optional: control logo height */
+    width: auto; /* Ensure the aspect ratio is maintained */
+}
 
+/* When scrolling, apply the animation */
+.navbar.scrolled .navbar-brand img {
+    transform: translateX(50%) scale(1.1); /* Move the logo to the center and grow slightly */
+    max-height: 45px; /* Slight increase in size */
+}
+
+/* Optional: Adjust the navbar when it becomes sticky (for visual clarity) */
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); /* Change background when scrolled */
+}
+
+
+/* Logo resizes depending on the screen size (relative to font size) */
+@media (max-width: 2600px) {
     .logo {
-        max-width: 200px;
+        width: 40vh; /* Increase size for medium-sized screens */
+    }
+    .hero h2 {
+        font-size: 3rem; /* Smaller text on medium screens */
+    }
+    .hero p {
+        font-size: 2rem; /* Adjust text size */
+    }
+}
+
+@media (max-width: 1200px) {
+    .logo {
+        width: 35vh; /* Increase size for medium-sized screens */
+    }
+    .hero h2 {
+        font-size: 2rem; /* Smaller text on medium screens */
+    }
+    .hero p {
+        font-size: 1.6rem; /* Adjust text size */
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 30vh; /* Larger logo for smaller screens */
+    }
+    .hero h2 {
+        font-size: 2rem; /* Further reduce text size for smaller screens */
+    }
+    .hero p {
+        font-size: 1.5rem; /* Adjust text size */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 30vw; /* Larger logo for mobile screens */
+    }
+    .hero h2 {
+        font-size: 1.8rem; /* Adjust text size */
     }
 
     .contact-section {
@@ -131,15 +189,23 @@ img {
     .card-body {
         padding: 2rem !important;
     }
+    .hero p {
+        font-size: 1.2rem; /* Adjust text size */
+    }
 }
-@media (max-width: 425px) {
 
+@media (max-width: 480px) {
     .logo {
-        min-width: 40vw;
-        max-width: 200px;
+        width: 40vw; /* Even larger logo for very small screens */
+    }
+    .hero h2 {
+        font-size: 1rem; /* Adjust text size */
+    }
+    .hero p {
+        font-size: .8rem; /* Adjust text size */
     }
 
     .hero {
-        max-height: 300px;
+        max-height: 50vh;
     }
 }
