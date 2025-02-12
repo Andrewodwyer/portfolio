@@ -1,8 +1,8 @@
-/* css/style.css */
 /* Global styles */
 body {
     font-family: 'Jost', sans-serif;
     font-weight: 200;
+    overflow-x: hidden; /* Prevents horizontal overflow */
 }
 
 p {
@@ -12,49 +12,72 @@ p {
 img {
     max-width: 80vw;
     height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth image transition */
 }
 
 .thin-text {
     font-weight: 200;
 }
 
+/* Hero Section */
 .hero {
-    height: 80vh;
+    height: 80vh; /* Keep the height of the hero section */
     background-color: #ffffff;
-    margin-top: 56px; /* Height of the fixed navbar */
+    margin-top: 56px; /* Adjust based on navbar height */
 }
 
+/* Logo Settings */
 .logo {
-    max-width: 300px;
+    position: relative;
+    width: 30%; /* Start with 30% width */
+    transition: all 0.3s ease; /* Transition for logo scaling */
 }
+
+/* Section animations for when they come into view */
+.project-section {
+    opacity: 0;
+    transform: translateY(50px); /* Initially hidden */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+}
+
+.project-section.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+}
+
 
 .project-image {
     transition: transform 0.5s ease;
 }
 
+/* Hover effect on images (slow transition on hover) */
+.project-image:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+/* Link and Text */
 .link-text {
     font-size: 1.2rem !important; 
     font-weight: 400 !important;
 }
 
-.project-image:hover {
-    transform: scale(1.05);
-}
-
+/* Primary text color */
 .text-primary {
     color: #0ea5e9 !important; /* Sky blue color */
     font-weight: 200;
 }
 
+/* Icons */
 .bi {
     font-size: 1.5rem;
 }
 
+/* Navbar styles */
 .navbar {
-    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
     background-color: rgba(255, 255, 255, 0.804);
 }
 
+/* Contact Section */
 .contact-section {
     padding: 120px 0;
     min-height: calc(100vh - 200px);
@@ -96,16 +119,27 @@ img {
     .hero {
         height: 60vh;
     }
-    
+
     .logo {
         max-width: 200px;
     }
-    
+
     .contact-section {
         padding: 80px 0;
     }
-    
+
     .card-body {
         padding: 2rem !important;
+    }
+}
+@media (max-width: 425px) {
+
+    .logo {
+        min-width: 40vw;
+        max-width: 200px;
+    }
+
+    .hero {
+        max-height: 300px;
     }
 }
