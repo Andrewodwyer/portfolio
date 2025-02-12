@@ -5,8 +5,13 @@ body {
     font-weight: 200;
 }
 
-h2 {
+p {
     font-weight: 400;
+}
+
+img {
+    max-width: 80vw;
+    height: auto;
 }
 
 .thin-text {
@@ -27,12 +32,18 @@ h2 {
     transition: transform 0.5s ease;
 }
 
+.link-text {
+    font-size: 1.2rem !important; 
+    font-weight: 400 !important;
+}
+
 .project-image:hover {
     transform: scale(1.05);
 }
 
 .text-primary {
     color: #0ea5e9 !important; /* Sky blue color */
+    font-weight: 200;
 }
 
 .bi {
