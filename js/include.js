@@ -1,34 +1,35 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // Load navigation and footer via jQuery
     $("#nav-placeholder").load("components/nav.html");
     $("#footer-placeholder").load("components/footer.html");
 
-    // Scroll animation for the entire page sections (project sections)
-    $(window).scroll(function() {
-        // Section visibility animation for project sections
-        $(".project-section").each(function() {
-            const sectionTop = $(this).offset().top;
-            const sectionBottom = sectionTop + $(this).outerHeight();
-            const windowTop = $(window).scrollTop();
-            const windowBottom = windowTop + $(window).height();
+    // Function to handle scroll animations
+    function handleScroll() {
+        let scrollTop = $(window).scrollTop();
+        let windowHeight = $(window).height();
 
-            // If the section is in the viewport, add class for animation
-            if (sectionBottom >= windowTop && sectionTop <= windowBottom) {
-                $(this).addClass('in-view');  // Add 'in-view' class to trigger animation
+        // Section visibility animation for project sections
+        $(".project-section").each(function () {
+            let sectionTop = $(this).offset().top;
+            let sectionBottom = sectionTop + $(this).outerHeight();
+
+            // Check if section is in viewport
+            if (sectionBottom >= scrollTop && sectionTop <= scrollTop + windowHeight) {
+                $(this).addClass("in-view");
             } else {
-                $(this).removeClass('in-view');  // Remove 'in-view' class if section is out of view
+                $(this).removeClass("in-view");
             }
         });
 
-        // Scroll animation for navbar logo
-        const scrollPosition = $(window).scrollTop();
-        const navbar = $(".navbar");
-
-        // When scrolling down 100px, add the 'scrolled' class to the navbar
-        if (scrollPosition > 100) {
-            navbar.addClass("scrolled");
+        // Navbar logo centering logic
+        let logo = $(".navlogo");
+        if (scrollTop > 160) {  // Increased scroll threshold to 150px
+            logo.addClass("center-logo");
         } else {
-            navbar.removeClass("scrolled");
+            logo.removeClass("center-logo");
         }
-    });
+    }
+
+    // Attach scroll event listener (debounced for performance)
+    $(window).on("scroll", handleScroll);
 });

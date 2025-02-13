@@ -118,21 +118,15 @@ img {
     transform: translateY(-2px);
 }
 
-/* Ensure the logo image maintains its aspect ratio */
-.navbar-brand img {
-    transition: transform 0.3s ease, max-width 0.3s ease;
-    max-height: 40px; /* Optional: control logo height */
+
+
+.navlogo {
+    max-height: 40px;
+    transition: transform 0.6s ease-in-out, margin-left 0.6s ease-in-out;
 }
 
-/* When scrolling, apply the animation */
-.navbar.scrolled .navbar-brand img {
-    transform: translateX(50%) scale(1.1); /* Move the logo to the center and grow slightly */
-    max-height: 45px; /* Slight increase in size */
-}
-
-/* Optional: Adjust the navbar when it becomes sticky (for visual clarity) */
-.navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.9); /* Change background when scrolled */
+.center-logo {
+    transform: translateX(calc(50vw - 50%)); /* Moves the logo to the center smoothly */
 }
 
 
