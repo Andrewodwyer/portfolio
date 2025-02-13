@@ -122,7 +122,6 @@ img {
 .navbar-brand img {
     transition: transform 0.3s ease, max-width 0.3s ease;
     max-height: 40px; /* Optional: control logo height */
-    width: auto; /* Ensure the aspect ratio is maintained */
 }
 
 /* When scrolling, apply the animation */

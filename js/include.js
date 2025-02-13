@@ -19,16 +19,8 @@ $(document).ready(function() {
                 $(this).removeClass('in-view');  // Remove 'in-view' class if section is out of view
             }
         });
-    });
-});
 
-$(document).ready(function() {
-    // Load navigation and footer via jQuery
-    $("#nav-placeholder").load("components/nav.html");
-    $("#footer-placeholder").load("components/footer.html");
-
-    // Scroll animation for navbar logo
-    $(window).scroll(function() {
+        // Scroll animation for navbar logo
         const scrollPosition = $(window).scrollTop();
         const navbar = $(".navbar");
 
