@@ -23,7 +23,7 @@ $(document).ready(function () {
 
         // Navbar logo centering logic
         let logo = $(".navlogo");
-        if (scrollTop > 160) {  // Increased scroll threshold to 150px
+        if (scrollTop > 160) {  // scroll threshold to 160px
             logo.addClass("center-logo");
         } else {
             logo.removeClass("center-logo");

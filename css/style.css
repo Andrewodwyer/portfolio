@@ -129,6 +129,10 @@ img {
     transform: translateX(calc(50vw - 50%)); /* Moves the logo to the center smoothly */
 }
 
+.portfolio-page {
+    padding-left: 10%; 
+    padding-right: 10%;
+}
 
 /* Logo resizes depending on the screen size (relative to font size) */
 @media (max-width: 2600px) {
