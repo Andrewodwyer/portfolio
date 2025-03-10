@@ -83,18 +83,23 @@ img {
 
 /* Contact Section */
 .contact-section {
-    padding: 120px 0;
+    padding: 120px 0 0 0;
     min-height: calc(100vh - 200px);
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
 }
+
+.form-label {
+    font-size: 0.75rem;
+}
+
 
 .card {
     border: none;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 .form-control {
-    border-radius: 8px;
+    border-radius: 0px;
     padding: 0.75rem;
     border: 1px solid #dee2e6;
 }
@@ -108,7 +113,7 @@ img {
     background-color: #0ea5e9;
     border-color: #0ea5e9;
     padding: 0.75rem;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     transition: all 0.3s ease;
 }
 
@@ -118,6 +123,13 @@ img {
     transform: translateY(-2px);
 }
 
+/* Skills Section */
+.skill-img {
+    width: 36px;
+    height: 36px;
+    /* margin: 8px; */
+    padding: 4px;
+}
 
 
 .navlogo {
@@ -180,11 +192,12 @@ img {
     }
 
     .contact-section {
-        padding: 80px 0;
+        padding: 80px 0 0 0;
     }
 
     .card-body {
         padding: 2rem !important;
+        font-size: small;
     }
     .hero p {
         font-size: 1.2rem; /* Adjust text size */
