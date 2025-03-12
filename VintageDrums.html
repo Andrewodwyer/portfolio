@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Andrew O'Dwyer</title>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <!-- Google Fonts: Jost -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation placeholder -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Main content -->
+    <main class="container py-5 portfolio-page">
+        <!-- Project Title Section -->
+        <div class="text-center my-4">
+            <h1 class="display-4 font-weight-bold mb-4 text-dark">
+                Vintage Drum Store
+            </h1>
+            <a
+                href="https://vintage-drum-store-6ce105a1b74f.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-link text-primary text-center link-text">
+                Visit Live Site
+                <span class="ml-2">&#8594;</span>
+            </a>
+        </div>
+
+        <!-- Project Image Section -->
+        <div class="mb-5 position-relative w-100 text-center">
+            <img
+                src="img/Vintage_Drum_Main_Image.png"
+                alt="Vintage Drums Hero"
+                class="img-fluid d-block mx-auto">
+        </div>
+
+        <!-- Project Overview Section -->
+        <section class="project-section mb-5">
+            <div class="border rounded p-4 bg-light text-dark">
+                <h2 class="font-weight-semibold text-center mb-4 text-primary">
+                    Project Overview
+                </h2>
+                <div class="text-center">
+                    <p>
+                        The Vintage Drum Store is a bespoke e-commerce platform tailored for collectors, professional musicians, and drum enthusiasts seeking high-quality vintage drums and cymbals. Unlike mainstream music gear marketplaces, which often prioritise volume over curation, this platform offers a premium shopping experience with carefully selected products, high-quality imagery, and detailed product information, including sound recordings.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="project-section text-center mb-5">
+            <img
+                src="img/featured-section.png"
+                alt="featured section"
+                class="img-fluid">
+        </div>
+
+        <!-- Identifying User Pain Points & Market Gaps Section -->
+        <section class="project-section mb-5">
+            <div class="border rounded p-4 bg-light text-dark">
+                <h2 class="font-weight-semibold text-center mb-4 text-primary">
+                    Identifying User Pain Points & Market Gaps
+                </h2>
+                <div>
+                    <p>
+                        Through competitor analysis and user research, several key issues were identified with existing websites selling vintage drums:
+                    </p>
+                    <ul>
+                        <li><strong>1. Lack of Curation & Overwhelming Product Listings</strong>
+                            <ul>
+                                <li>Many platforms (e.g., Reverb, eBay) present an extensive range of products with little organisation, making it difficult for users to find rare or high-end vintage drums.</li>
+                                <li>Users struggle with filtering options and often have to sift through low-quality listings.</li>
+                            </ul>
+                        </li>
+                        <li><strong>2. Poor Navigation & Cluttered Interfaces</strong>
+                            <ul>
+                                <li>Websites like eBay and some drum retailers have outdated or cluttered UI, making it difficult to browse efficiently.</li>
+                                <li>Product discovery is hindered by inconsistent categorisation and confusing layouts.</li>
+                            </ul>
+                        </li>
+                        <li><strong>3. Limited Product Information & Lack of Sound Previews</strong>
+                            <ul>
+                                <li>Buyers of vintage drums value sound quality and craftsmanship, yet many existing platforms only provide static images with generic descriptions.</li>
+                                <li>The inability to hear a drum before purchasing increases uncertainty, leading to hesitation or abandoned purchases.</li>
+                            </ul>
+                        </li>
+                        <li><strong>4. Complicated Checkout Process & Lack of Trust</strong>
+                            <ul>
+                                <li>Some marketplaces have long-winded checkout processes with unexpected fees or unclear shipping policies.</li>
+                                <li>Users often worry about product authenticity and whether they are making a secure purchase.</li>
+                            </ul>
+                        </li>
+                        <li><strong>5. Limited Personalisation & Engagement Features</strong>
+                            <ul>
+                                <li>Most platforms do not offer features that allow users to track favourite products, leave detailed reviews, or engage with other collectors.</li>
+                                <li>Collectors often want to share insights and feedback, but existing sites lack the ability to interact beyond basic ratings.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="project-section text-center mb-5">
+            <img
+                src="img/P5_desktop-wireframe.png"
+                alt="Desktop wireframe"
+                class="img-fluid">
+        </div>
+
+        <!-- UX/UI Design Approach Section -->
+        <section class="project-section mb-5">
+            <div class="border rounded p-4 bg-light text-dark">
+                <h2 class="font-weight-semibold text-center mb-4 text-primary">
+                    UX/UI Design Approach – Addressing These Pain Points
+                </h2>
+                <div>
+                    <p><strong>Stage 1: Research & Strategy</strong></p>
+                    <ul>
+                        <li><strong>Competitor Analysis:</strong> Evaluated existing platforms (Drum Center of Portsmouth, Reverb, Vintage Drum Center, eBay) to identify navigation issues, design flaws, and best practices.</li>
+                        <li><strong>User Research:</strong> Interviewed drummers, collectors, and music store owners to understand their frustrations and expectations when shopping for vintage drums online.</li>
+                    </ul>
+
+                    <p><strong>Stage 2: Information Architecture & Navigation Improvements</strong></p>
+                    <ul>
+                        <li><strong>Solution:</strong> Simplified site navigation and product categorisation for intuitive browsing.</li>
+                        <li><strong>Key Features:</strong>
+                            <ul>
+                                <li>Clear product categories (Drum Kits, Cymbals, Stands, Accessories) with advanced filters for brand, price, and rating.</li>
+                                <li>Minimalist menu structure to reduce cognitive load and improve the browsing experience.</li>
+                                <li>Predictive search functionality allowing users to find products efficiently without excessive scrolling.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p><strong>High-Fidelity Prototyping – Enhancing Visual Appeal & Engagement</strong></p>
+                    <ul>
+                        <li><strong>Solution:</strong> Developed a modern, visually engaging interface that highlights premium drum collections.</li>
+                        <li><strong>Key Features:</strong>
+                            <ul>
+                                <li>Large, high-quality product images with zoom functionality.</li>
+                                <li>Interactive sound previews allowing users to hear drums before purchasing.</li>
+                                <li>Colour scheme & typography selected to align with a vintage, premium aesthetic while maintaining readability.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="project-section text-center mb-5">
+          <img
+            src="img/P5_mobile-wireframe.png"
+            alt="UX/UI Design Process"
+            class="img-fluid">
+        </div>
+
+        <!-- Stage 3: Optimised Checkout & Trust Signals -->
+        <section class="project-section mb-5">
+          <div class="border rounded p-4 bg-light text-dark">
+              <p class="text-center"><strong>Stage 3: UX/UI Wireframing & Prototyping</strong></p>
+              <p><strong>Wireframing – Building an Intuitive Layout</strong></p>
+              <ul>
+                  <li><strong>Solution:</strong> Designed a clean, structured layout focusing on product discoverability.</li>
+                  <li><strong>Key Features:</strong>
+                      <ul>
+                          <li>Created low-fidelity wireframes to establish product display, filtering, and checkout flows.</li>
+                          <li>Ensured seamless transitions between browsing, product selection, and checkout.</li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+        </section>
+
+        <div class="project-section text-center mb-5">
+          <img
+            src="img/Product_details_2.png"
+            alt="Checkout View"
+            class="img-fluid">
+        </div>
+
+        <!-- Stage 4: Personalisation & User Engagement Features -->
+        <section class="project-section mb-5">
+          <div class="border rounded p-4 bg-light text-dark">
+              <p class="text-center"><strong>Stage 4: Personalisation & User Engagement Features</strong></p>
+              <ul>
+                <li><strong>Solution:</strong> Implemented features to enhance user retention and shopping experience.</li>
+                <li><strong>Key Features:</strong>
+                    <ul>
+                        <li>User Accounts & Wishlists: Registered users can like and save products for future reference.</li>
+                        <li>Reviews & Ratings System: Users can leave detailed feedback on products and engage with other musicians.</li>
+                        <li>Custom Profiles: Personalised recommendations based on browsing history and user preferences.</li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Stage 4 images -->
+        <section class="project-section mb-5">
+          <div class="border rounded p-4 bg-light text-dark">
+            <h2 class="font-weight-semibold text-center mb-4 text-primary">
+              Review and Liked Products
+            </h2>
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h6 class="font-weight-semibold mb-2">Reviews</h6>
+                <img
+                  src="img/VintageDrums_reviews.png"
+                  alt="Reviews"
+                  class="img-fluid rounded shadow-sm">
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <h6 class="font-weight-semibold my-2">Liked Products</h6>
+                <img
+                  src="img/Liked_Products.png"
+                  alt="Liked Products"
+                  class="img-fluid rounded shadow-sm">
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- Stage 5: Optimised Checkout & Trust Signals -->
+        <section class="project-section mb-5">
+          <div class="border rounded p-4 bg-light text-dark">
+              <p class="text-center"><strong>Stage 5: Optimised Checkout & Trust Signals</strong></p>
+              <ul>
+                  <li><strong>Solution:</strong> Streamlined the checkout process to build trust and encourage conversions.</li>
+                  <li><strong>Key Features:</strong>
+                      <ul>
+                          <li>Secure payments via Stripe with clear pricing breakdown.</li>
+                          <li>Transparent shipping information including delivery estimates and premium options for drum installation.</li>
+                          <li>Order tracking and confirmation emails to reassure users post-purchase.</li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+        </section>
+
+        <div class="project-section text-center mb-5">
+          <img
+            src="img/checkout_view.png"
+            alt="Checkout View"
+            class="img-fluid">
+        </div>
+
+        <!-- Key Features Section -->
+        <section class="project-section mb-5">
+          <div class="border rounded p-4 bg-light text-dark">
+            <h2 class="font-weight-semibold text-center mb-4 text-primary">
+              Key Features
+            </h2>
+            <ul class="list-unstyled text-center">
+              <li>Interactive product pages with high-quality images and sound recordings</li>
+              <li>User authentication and personalised profiles with order history</li>
+              <li>Advanced search functionality with filtering options</li>
+              <li>Secure checkout process with Stripe integration</li>
+              <li>Responsive design for seamless mobile and desktop experience</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="project-section text-center mb-5">
+          <img
+            src="img/Product_details_2.png"
+            alt="Product View 2"
+            class="img-fluid">
+        </div>
+
+        <!-- Design Considerations Section -->
+        <section class="project-section mb-5">
+          <div class="border rounded p-4 bg-light text-dark">
+            <h2 class="font-weight-semibold text-center mb-4 text-primary">
+              Design Considerations
+            </h2>
+              <h5 class="font-weight-semibold mt-3 text-primary">Colour Palette</h5>
+              <ul class="list-unstyled">
+                <li><strong>Primary Background:</strong> White (#FFFFFF) & Off-White (#F8F9FA) for an open feel</li>
+                <li><strong>Footer:</strong> Dark Charcoal (#2A2A2A) for contrast</li>
+                <li><strong>Main Action Button:</strong> Teal-Green (#49A299) for attention</li>
+                <li><strong>Hover Button:</strong> Copper-Gold (#B0882F) on footer</li>
+              </ul>
+
+              <h5 class="font-weight-semibold mt-3 text-primary">Typography</h5>
+              <ul class="list-unstyled">
+                <li><strong>Primary Font:</strong> Roboto – for readability</li>
+                <li><strong>Logo Font:</strong> Custom "Vintage Drums" font</li>
+              </ul>
+
+              <h5 class="font-weight-semibold mt-3 text-primary">Icons & Favicon</h5>
+              <ul class="list-unstyled">
+                <li><strong>Favicon:</strong> Custom "V" icon</li>
+                <li><strong>Icons:</strong> Font Awesome icons for shopping cart, user accounts, etc.</li>
+              </ul>
+          </div>
+        </section>
+
+        <!-- Design Assets Section -->
+        <section class="project-section mb-5">
+          <div class="border rounded p-4 bg-light text-dark">
+            <h2 class="font-weight-semibold text-center mb-4 text-primary">
+              Design Assets
+            </h2>
+            <div class="row">
+              <div class="col-md-6">
+                <h6 class="font-weight-semibold mb-2">Typography</h6>
+                <img
+                  src="img/P5_Typography.png"
+                  alt="Typography"
+                  class="img-fluid rounded shadow-sm">
+              </div>
+              <div class="col-md-6">
+                <h6 class="font-weight-semibold my-2">Colour Palette</h6>
+                <img
+                  src="img/P5_colours.png"
+                  alt="Product Mockups"
+                  class="img-fluid rounded shadow-sm">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Outcome & Impact Section -->
+        <section class="project-section mb-5">
+            <div class="border rounded p-4 bg-light text-dark">
+                <h2 class="font-weight-semibold text-center mb-4 text-primary">
+                    Outcome & Impact
+                </h2>
+                <div>
+                    <p>The redesigned approach significantly improved the user experience by addressing core frustrations collectors and musicians faced on existing platforms.</p>
+                    <ul>
+                        <li>Enhanced Discoverability – Users can easily find and filter high-quality vintage drums without sifting through irrelevant listings.</li>
+                        <li>Seamless Browsing & Navigation – A clean, structured layout reduces friction in the shopping experience.</li>
+                        <li>Greater Engagement – Interactive product pages, sound previews, and personalisation features keep users engaged.</li>
+                        <li>Improved Trust & Conversion – A transparent checkout process and order tracking boost customer confidence.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Thoughts Section -->
+        <section class="project-section">
+            <div class="border rounded p-4 bg-light text-dark">
+                <h2 class="font-weight-semibold text-center mb-4 text-primary">
+                    Final Thoughts
+                </h2>
+                <div>
+                    <p>This project demonstrates how a well-executed UX/UI design can transform a niche e-commerce site into an engaging, user-centric platform. The result is a seamless shopping experience that elevates the vintage drum store's premium offering, helping it stand out in a competitive market.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- jQuery (needed for includes) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/include.js"></script>
+</body>
+</html>

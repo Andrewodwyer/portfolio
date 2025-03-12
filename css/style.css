@@ -3,10 +3,21 @@ body {
     font-family: 'Jost', sans-serif;
     font-weight: 200;
     overflow-x: hidden; /* Prevents horizontal overflow */
+    font-size: 1.1em;
+    color: rgb(110, 110, 110) !important;
 }
 
 p {
     font-weight: 400;
+}
+
+li {
+    margin-bottom: .7em;
+}
+
+ul, h4 {
+    margin-bottom: 1.4em;
+    margin-top: 1.4em;
 }
 
 img {
@@ -15,8 +26,16 @@ img {
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth image transition */
 }
 
+.bg-light-2 {
+    background-color: rgba(108, 139, 137, 0.1)
+}
+
 .thin-text {
     font-weight: 200;
+}
+
+.padding-container {
+    padding: 4% 15%;
 }
 
 /* Hero Section */
@@ -147,8 +166,8 @@ img {
 }
 
 .portfolio-page {
-    padding-left: 10%; 
-    padding-right: 10%;
+    margin-left: 10%; 
+    margin-right: 10%;
 }
 
 /* Logo resizes depending on the screen size (relative to font size) */
