@@ -118,6 +118,19 @@ img {
     /* border-radius: 15px; */
 }
 
+/* Increase the size of the background and the space around the icon */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #6c757d; /* Dark Grey Background */
+    border-radius: 50%; /* Make the background circular */
+}
+
+/* Optionally adjust the size of the icon */
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    font-size: 1.5rem; /* Make the icon itself bigger */
+}
+
 
 .form-control {
     border-radius: 0px;
