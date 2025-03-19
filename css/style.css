@@ -26,8 +26,28 @@ img {
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth image transition */
 }
 
+/* Add transition for smooth scaling effect */
+.project-section {
+    position: relative;
+    overflow: hidden; /* Ensure the image doesn’t overflow outside the section */
+}
+
+.project-section img {
+    transition: transform 0.3s ease, box-shadow 0.5s ease; /* Smooth transition */
+}
+
+/* When hovering over the entire section, scale the image */
+.project-section:hover img {
+    transform: scale(1.05); /* Increase image size */
+}
+
+
 .green{
     background-color: #6C8B89;
+}
+
+.blue {
+    background-color: #032855;
 }
 
 .bg-light-2 {
