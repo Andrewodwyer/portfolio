@@ -42,6 +42,12 @@ img {
     padding: 4% 15%;
 }
 
+/* Custom padding for sections */
+.section-padding {
+    padding-left: 5vw; /* 5% of the viewport width */
+    padding-right: 5vw; /* 5% of the viewport width */
+}
+
 /* Hero Section */
 .hero {
     height: 80vh; /* Keep the height of the hero section */
