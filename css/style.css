@@ -14,7 +14,7 @@ p {
     margin-bottom: .9em;
 }
 
-ul, h5, h4, h2, h3 {
+ul, h6, h5, h4, h2, h3 {
     margin-bottom: 1.4em;
     margin-top: 1.4em;
     color: rgb(65, 65, 65);
@@ -32,15 +32,14 @@ img {
     overflow: hidden; /* Ensure the image doesn’t overflow outside the section */
 }
 
-.project-section img {
+.section img {
     transition: transform 0.3s ease, box-shadow 0.5s ease; /* Smooth transition */
 }
 
 /* When hovering over the entire section, scale the image */
-.project-section:hover img {
+.section:hover img {
     transform: scale(1.05); /* Increase image size */
 }
-
 
 .green{
     background-color: #6C8B89;
@@ -99,6 +98,24 @@ img {
     transform: translateY(0); /* Move to the original position */
 }
 
+/* Profile picture styling */
+.logo-profile-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.profile-picture {
+    width: 5%;
+    min-width: 40px; /* Ensures the image doesn't get too small on mobile */
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+    border: 1px solid #0ea5e9; /* Use your primary color here */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 
 .project-image {
     transition: transform 0.5s ease;
@@ -131,6 +148,17 @@ img {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.804);
 }
+
+/* Card Styling */
+.card {
+    background-image: url('../img/background_card.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
 
 /* Contact Section */
 .contact-section {
@@ -202,7 +230,6 @@ img {
     max-height: 50px;
     transition: transform 0.8s ease-in-out, margin-left 0.8s ease-in-out;
     z-index: 999;
-
 }
 
 .center-logo {
