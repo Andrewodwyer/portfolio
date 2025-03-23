@@ -24,24 +24,29 @@
     <!-- Main content -->
     <main>
         <!-- Hero Section -->
-        <section class="hero d-flex align-items-center">
-            <div class="container text-center">
+        <section class="hero align-items-center hero-image">
+            <div class="text-center pt-5">
                 <div class="logo-profile-container d-flex align-items-center justify-content-center">
                     <img src="img/logo.png" alt="Andrew O'Dwyer" class="logo">
-                    <img src="img/I.profile.png" alt="Andrew O'Dwyer Profile" class="profile-picture">
+                    <img src="img/I.profile.a.png" alt="Andrew O'Dwyer Profile" class="profile-picture">
                 </div>
-                <h3 class="text-primary mb-3 thin-text">Software Developer & UX/UI Designer</h3>
+                <h3 class="text-primary mb-3 thin-text">UX/UI Designer & Developer</h3>
                 <p class="thin-text">Crafting digital experiences that blend creativity with functionality</p>
             </div>
-        </section>
 
-        <!-- Project Sections -->
+        </section>
     </main>
+
+    <section class="craft-bar">
+        <div class="container text-center my-3">
+            <h2 class="thin-text">Portfolio</h2>
+        </div>
+    </section>
 
     <!-- Project Section 1: E-Commerce (Text Left, Image Right) -->
     <section class="section project-section">
         <div class="container-fluid">
-            <div class="row py-4">
+            <div class="row pb-4">
                 <div class=" bg-light col-md-6 col-ms-12 d-flex align-items-center p-4">
                     <div>
                         <span class="project-title">01 / E-COMMERCE</span>
@@ -93,6 +98,51 @@
                 <div class="col-md-6 col-ms-12 p-0">
                     <img src="img/starfox_top_image.png"
                         alt="STARFOX SQUADRON Game" class="img-fluid rounded-start blue -sm w-100 h-100 object-fit-cover p-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <div class="container text-center my-3">
+                                <h2 class="thin-text">Get in Touch</h2>
+                            </div>
+                            <!-- YOUR_FORM_ID from Formspree -->
+                            <form action="https://formspree.io/f/mnnjbdaw" method="POST">
+                                <div class="mb-3 text-center fs-6">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control border-0 border-bottom border-secondary thin-text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="mb-3 text-center">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control border-0 border-bottom border-secondary thin-text" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="mb-3 text-center">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control border-0 border-bottom border-secondary thin-text" id="subject" name="subject" required>
+                                </div>
+                                
+                                <div class="mb-4 text-center">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control border-0 border-bottom border-secondary thin-text" id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                
+                                <div class="d-grid text-center">
+                                    <button type="submit" class="btn btn-outline-primary">Send Message</button>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -71,13 +71,20 @@ img {
 .hero {
     height: 80vh; /* Keep the height of the hero section */
     background-color: #ffffff;
-    margin-top: 56px; /* Adjust based on navbar height */
+    /* margin-top: 82px;  */
+}
+
+/* Hero Section */
+.hero-about {
+    height: 60vh; /* Keep the height of the hero section */
+    background-color: #ffffff;
+    /* margin-top: 82px;  */
 }
 
 /* Logo Settings */
 .logo {
     position: relative;
-    width: 30vw; /* Set the initial size relative to viewport width */
+    width: 20vw; /* Set the initial size relative to viewport width */
     transition: all 0.3s ease; /* Smooth transition for the resizing */
 }
 
@@ -112,8 +119,8 @@ img {
     border-radius: 50%;
     object-fit: cover;
     margin-left: 10px;
-    border: 1px solid #0ea5e9; /* Use your primary color here */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* border: 1px solid #0ea5e9;  */
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
 }
 
 
@@ -149,14 +156,28 @@ img {
     background-color: rgba(255, 255, 255, 0.804);
 }
 
+/* .craft-bar {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.804);
+    position: relative;
+    top: -50px;
+} */
+
+.hero-image {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, .9)), 
+        url('../img/background_card.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Card Styling */
-.card {
+.background {
     background-image: url('../img/background_card.jpg');
     background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    position: relative;
-    transition: transform 0.3s ease;
+    background-position: top;
 }
 
 
@@ -227,7 +248,7 @@ img {
 
 .navlogo {
     padding:0;
-    max-height: 50px;
+    max-height: 40px;
     transition: transform 0.8s ease-in-out, margin-left 0.8s ease-in-out;
     z-index: 999;
 }
@@ -244,9 +265,7 @@ img {
 
 /* Logo resizes depending on the screen size (relative to font size) */
 @media (max-width: 2600px) {
-    .logo {
-        width: 40vh; /* Increase size for medium-sized screens */
-    }
+
     .hero h3 {
         font-size: 2.5rem; /* Smaller text on medium screens */
     }
@@ -256,9 +275,7 @@ img {
 }
 
 @media (max-width: 1200px) {
-    .logo {
-        width: 35vh; /* Increase size for medium-sized screens */
-    }
+
     .hero h3 {
         font-size: 1.6rem; /* Smaller text on medium screens */
     }
@@ -268,9 +285,6 @@ img {
 }
 
 @media (max-width: 992px) {
-    .logo {
-        width: 30vh; /* Larger logo for smaller screens */
-    }
     .hero h3 {
         font-size: 1.6rem; /* Further reduce text size for smaller screens */
     }
@@ -280,9 +294,10 @@ img {
 }
 
 @media (max-width: 768px) {
-    .logo {
-        width: 30vw; /* Larger logo for mobile screens */
+    .navlogo {
+        max-height: 33px;
     }
+
     .hero h3 {
         font-size: 1.6rem; /* Adjust text size */
     }
@@ -301,6 +316,11 @@ img {
 }
 
 @media (max-width: 480px) {
+
+    .navlogo {
+        max-height: 30px;
+    }
+
     .logo {
         width: 40vw; /* Even larger logo for very small screens */
     }
