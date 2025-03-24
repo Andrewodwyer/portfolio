@@ -76,7 +76,7 @@ img {
 
 /* Hero Section */
 .hero-about {
-    height: 60vh; /* Keep the height of the hero section */
+    height: 70vh; /* Keep the height of the hero section */
     background-color: #ffffff;
     /* margin-top: 82px;  */
 }
@@ -177,7 +177,7 @@ img {
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, .9)), 
     url('../img/background_card.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(80vh - 164px); 
+    height: calc(90vh - 164px); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -303,7 +303,9 @@ img {
 }
 
 .gif{
-    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmJhMHprMDMxNWt3eGNwNmtkaXAwdGhoeGE0dmd6eDczeHN5NDR6NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AdGJTq4glfUrABEm5z/giphy.gif");
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, .9)), 
+        url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmJhMHprMDMxNWt3eGNwNmtkaXAwdGhoeGE0dmd6eDczeHN5NDR6NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AdGJTq4glfUrABEm5z/giphy.gif");
+        background-size: cover;
 }
 
 /* Logo resizes depending on the screen size (relative to font size) */
@@ -375,6 +377,6 @@ img {
     }
 
     .hero {
-        max-height: 50vh;
+        max-height: 60vh;
     }
 }
