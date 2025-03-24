@@ -113,7 +113,7 @@ img {
 }
 
 .profile-picture {
-    width: 5%;
+    max-width: 4em;
     min-width: 40px; /* Ensures the image doesn't get too small on mobile */
     aspect-ratio: 1/1;
     border-radius: 50%;
@@ -171,6 +171,20 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero-image-about{
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, .9)), 
+    url('../img/background_card.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(80vh - 164px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.high-out{
+    transform: translateY(-3rem);
 }
 
 /* Card Styling */
@@ -261,6 +275,35 @@ img {
 .portfolio-page {
     margin-left: 10%; 
     margin-right: 10%;
+}
+
+/* Animation */
+
+/* Animated Down Arrow */
+.down-arrow-container {
+    margin-bottom: 15px;
+}
+
+.animated-arrow {
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+    display: inline-block;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.gif{
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmJhMHprMDMxNWt3eGNwNmtkaXAwdGhoeGE0dmd6eDczeHN5NDR6NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AdGJTq4glfUrABEm5z/giphy.gif");
 }
 
 /* Logo resizes depending on the screen size (relative to font size) */
