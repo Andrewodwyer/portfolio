@@ -89,7 +89,8 @@ img {
 /* Logo Settings */
 .logo {
     position: relative;
-    width: 20vw; /* Set the initial size relative to viewport width */
+    max-width: 6em;
+    min-width: 160px;
     transition: all 0.3s ease; /* Smooth transition for the resizing */
 }
 
@@ -126,6 +127,13 @@ img {
     margin-left: 10px;
     /* border: 1px solid #0ea5e9;  */
     /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+}
+
+.stickman {
+    max-width: 6em;
+    min-width: 50px; /* Ensures the image doesn't get too small on mobile */
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 /* .hard-shadow-1{
@@ -320,74 +328,36 @@ img {
 }
 
 /* Logo resizes depending on the screen size (relative to font size) */
-@media (max-width: 2600px) {
+@media (min-width: 766px) {
 
-    .hero h3 {
-        font-size: 2.5rem; /* Smaller text on medium screens */
-    }
-    .hero p {
-        font-size: 1.8rem; /* Adjust text size */
-    }
-}
-
-@media (max-width: 1200px) {
-
-    .hero h3 {
-        font-size: 1.6rem; /* Smaller text on medium screens */
-    }
-    .hero p {
-        font-size: 1.2rem; /* Adjust text size */
-    }
-}
-
-@media (max-width: 992px) {
-    .hero h3 {
-        font-size: 1.6rem; /* Further reduce text size for smaller screens */
-    }
-    .hero p {
-        font-size: 1.2rem; /* Adjust text size */
-    }
-}
-
-@media (max-width: 768px) {
-    .navlogo {
-        max-height: 33px;
-    }
-
-    .hero h3 {
-        font-size: 1.6rem; /* Adjust text size */
-    }
-
-    .contact-section {
-        padding: 80px 0 0 0;
-    }
-
-    .card-body {
-        padding: 2rem !important;
-        font-size: small;
-    }
-    .hero p {
-        font-size: 1.2rem; /* Adjust text size */
-    }
-}
-
-@media (max-width: 480px) {
-
-    .navlogo {
-        max-height: 30px;
+    .stickman {
+        min-width: 200px;
     }
 
     .logo {
-        width: 40vw; /* Even larger logo for very small screens */
-    }
-    .hero h3 {
-        font-size: 1rem; /* Adjust text size */
-    }
-    .hero p {
-        font-size: .8rem; /* Adjust text size */
+        min-width: 250px;
     }
 
-    .hero {
-        max-height: 60vh;
+    .profile-picture{
+
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .stickman {
+        min-width: 250px;
+    }
+
+    .logo {
+        min-width: 340px;
+    }
+
+    .profile-picture{
+        min-width: 120px;
+    }
+
+    .hero{
+        max-height: 80vh;
     }
 }
