@@ -20,6 +20,10 @@ ul, h6, h5, h4, h2, h3 {
     color: rgb(65, 65, 65);
 }
 
+.text-light {
+    color: #dee2e6 !important;
+}
+
 img {
     /* max-width: 80vw; */
     height: auto;
@@ -56,6 +60,7 @@ img {
 .thin-text {
     font-weight: 200;
 }
+
 
 .padding-container {
     padding: 4% 15%;
@@ -122,6 +127,12 @@ img {
     /* border: 1px solid #0ea5e9;  */
     /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
 }
+
+/* .hard-shadow-1{
+    border-right: 10px solid #0b6995;
+    border-bottom: 10px solid #0b6995;
+    border-radius: 20px;
+} */
 
 
 .project-image {
