@@ -63,7 +63,7 @@ img {
 
 
 .padding-container {
-    padding: 4% 15%;
+    padding: 4% 10%;
 }
 
 /* Custom padding for sections */
@@ -90,7 +90,7 @@ img {
 .logo {
     position: relative;
     max-width: 6em;
-    min-width: 160px;
+    min-width: 120px;
     transition: all 0.3s ease; /* Smooth transition for the resizing */
 }
 
@@ -130,9 +130,8 @@ img {
 }
 
 .stickman {
-    max-width: 6em;
-    min-width: 50px; /* Ensures the image doesn't get too small on mobile */
-    aspect-ratio: 1/1;
+    max-width: 3.2em;
+    min-width: 30px; /* Ensures the image doesn't get too small on mobile */
     object-fit: cover;
 }
 
@@ -226,10 +225,9 @@ img {
 }
 
 
-.card {
+/* .card {
     border: none;
-    /* border-radius: 15px; */
-}
+} */
 
 /* Increase the size of the background and the space around the icon */
 .carousel-control-prev-icon,
@@ -327,30 +325,25 @@ img {
         background-size: cover;
 }
 
-/* Logo resizes depending on the screen size (relative to font size) */
 @media (min-width: 766px) {
 
     .stickman {
-        min-width: 200px;
+        min-width: 5em;
     }
 
     .logo {
-        min-width: 250px;
-    }
-
-    .profile-picture{
-
+        min-width: 200px;
     }
 }
 
 @media (min-width: 1440px) {
 
-    .stickman {
+    /* .stickman {
         min-width: 250px;
-    }
+    } */
 
     .logo {
-        min-width: 340px;
+        min-width: 250px;
     }
 
     .profile-picture{
