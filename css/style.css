@@ -174,6 +174,17 @@ img {
     background-color: rgba(255, 255, 255, 0.804);
 }
 
+/* Hide the default dropdown caret icon */
+.nav-item .dropdown-toggle::after {
+    display: none; /* This hides the default arrow */
+}
+  
+/* Optional: Apply a rotation effect for the custom icon when the dropdown is opened */
+.nav-item .dropdown-toggle[aria-expanded="true"] .animated-arrow {
+    transform: rotate(180deg); /* Rotate arrow when dropdown is open */
+}
+  
+
 /* .craft-bar {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.804);
