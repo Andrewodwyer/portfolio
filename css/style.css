@@ -53,6 +53,10 @@ img {
     background-color: #032855;
 }
 
+.orange {
+    color: #FF8C00;
+}
+
 .bg-light-2 {
     background-color: rgba(108, 139, 137, 0.1)
 }
@@ -203,8 +207,8 @@ img {
 }
 
 .hero-image-about{
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, .9)), 
-    url('../img/background_card.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), 
+    url('../img/Monet_Sunrise.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(90vh - 164px); 
     display: flex;
@@ -358,7 +362,7 @@ img {
     }
 
     .profile-picture{
-        min-width: 120px;
+        min-width: 80px;
     }
 
     .hero{
