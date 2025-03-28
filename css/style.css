@@ -283,6 +283,35 @@ img {
     transform: translateY(-2px);
 }
 
+.custom-btn-V {
+    background-color: #00A499; /* Custom color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.custom-btn-V:hover {
+    background-color: #008f86; /* Slightly darker shade for hover */
+}
+
+.custom-btn-W {
+    background-color: #377D78; /* Custom color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.custom-btn-W:hover {
+    background-color: #2e665d; /* Slightly darker shade for hover */
+}
+
+.custom-btn-S {
+    background-color: #008DA8; /* Custom blue-teal color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.custom-btn-S:hover {
+    background-color: #007a8c; /* Slightly darker shade for hover */
+}
+
 /* Skills Section */
 .skill-img {
     width: 36px;
